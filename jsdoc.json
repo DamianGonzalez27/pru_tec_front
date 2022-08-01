@@ -1,0 +1,46 @@
+{
+  "plugins": [],
+  "source": {
+    "include": ["pages", "components", "hooks", "styles"],
+    "includePattern": ".jsx$",
+    "excludePattern": "(node_modules|docs)"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./docs",
+    "template": "node_modules/clean-jsdoc-theme",
+    "readme": "./Readme.md",
+    "tutorials": "./tutorials",
+    "theme_opts": {
+      "theme": "dark",
+      "sections": [
+        "Tutorials",
+        "Menu",
+        "Global",
+        "Classes",
+        "Modules",
+        "Externals",
+        "Events",
+        "Namespaces"
+      ],
+      "meta": [
+        {
+          "name": "author",
+          "content": "Hamilton & Lovelace"
+        }
+      ],
+      "footer": "Hamilton & Lovelace",
+      "codepen": {
+        "enable_for": ["examples"],
+        "options": {
+          "js_external": "https://code.jquery.com/jquery-3.6.0.min.js",
+          "js_pre_processor": "babel"
+        }
+      }
+    }
+  }
+}
